@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мемасні Тваринки</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Мемасні тваринки</h1>
+    </header>
+    <section>
+        <h2>Котики</h2>
+        <ul>
+            <li onclick="show(1)"> Здивований котик з великими очима</li>
+            <li onclick="show(2)">Котик, що вітає вас з важливим святом</li>
+            <li onclick="show(3)">Котик, який має завдання для вас</li>
+        </ul>
+        <img id="image" src=""  alt="оберіть котика"/>
+    </section>
+    <section>
+        <h2>Собачки</h2>
+        <ul>
+            <li onclick="show(4)"> Небезпечна собачка</li>
+            <li onclick="show(5)">Собачка сомельє</li>
+            <li onclick="show(6)">Стильна собачка</li>
+        </ul>
+        <img id="image2" src=""  alt="оберіть собачку"/>
+    </section>
+    <script>
+        function show(im) {
+            if(im<4){
+                let image = document.getElementById("image");
+                if (im===1){
+                    image.src = "./images/eyes_cat.png"
+                }
+                if (im===2){
+                    image.src = "./images/congratulate_cat.png"
+                }
+                if (im===3){
+                    image.src = "./images/skyrim_cat.png"
+                }
+            }else {
+                let image = document.getElementById("image2");
+                if (im===4){
+                    image.src = "./images/katana_dog.png"
+                }
+                if (im===5){
+                    image.src = "./images/vine_dog.png"
+                }
+                if (im===6){
+                    image.src = "./images/fashion_dog.png"
+                }
+            }
+        }
+    </script>
+</body>
+</html>
